@@ -1,0 +1,29 @@
+@import "font";
+@import "../var/index";
+
+@mixin button-primary-regular {
+    @include font-primary-xl-bold;
+    height: $button-height-primary;
+    line-height: $button-height-primary;
+    color: $white-text-color;
+    background-color: $primary-orange-color;
+    border-radius: 8px;
+}
+
+@mixin button-primary-outlined {
+    @include font-primary-xl-bold;
+    height: $button-height-primary;
+    line-height: $button-height-primary;
+    color: $secondary-orange-color;
+    border: 1px solid $primary-orange-color;
+    border-radius: 8px;
+}
+
+@mixin button-groups-outlined {
+    @include font-primary-xl-bold;
+    height: $button-height-secondary;
+    line-height: $button-height-secondary;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+}

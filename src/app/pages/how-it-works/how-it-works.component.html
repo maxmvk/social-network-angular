@@ -1,0 +1,11 @@
+<div fxFlex fxLayout="column" class="wrapper" id="top">
+  <div class="preview-card" fxFlex fxFlexAlign="center center">
+    <h1 class="header-text">How it Works</h1>
+    <h2 class="label-text">Get Better experience for find your motivation pair today</h2>
+    <img class="img-block" src="assets/images/how-it-works.svg" alt="">
+  </div>
+
+  <div class="expansion-container" *ngFor="let expansion of expansions">
+    <app-expansion-panel [expansion]="expansion"></app-expansion-panel>
+  </div>
+</div>

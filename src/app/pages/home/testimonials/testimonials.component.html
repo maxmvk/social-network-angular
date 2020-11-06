@@ -1,0 +1,33 @@
+<div class="testimonials-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <div class="testimonials-content" fxLayout="column" fxLayoutAlign="center center" [ngClass.lt-md]="'mobile'">
+        <div fxLayout="row" fxLayoutAlign="space-between center" class="title">
+            <h2>Testimonials</h2>
+            <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px" fxHide.gt-sm>
+                <button mat-button (click)="previousReview()">
+                    <mat-icon>navigate_before</mat-icon>
+                </button>
+                <button mat-button (click)="nextReview()">
+                    <mat-icon>navigate_next</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="reviews-container" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="30px" fxHide.lt-md>
+            <div class="review" fxLayout="column" fxLayoutAlign="space-between center" *ngFor="let review of reviewsList">
+                <img [src]="review.imgUrl" alt="">
+                <p>{{review.text}}</p>
+                <div class="divider"></div>
+                <b>{{review.name}}</b>
+                <span>{{review.position}}</span>
+            </div>
+        </div>
+        <div class="reviews-container" fxLayout="row wrap" fxLayoutAlign="center center" fxHide.gt-sm *ngIf="show">
+            <div class="review" fxLayout="column" fxLayoutAlign="space-between center">
+                <img [src]="reviewsList[slideNumber].imgUrl" alt="">
+                <p>{{reviewsList[slideNumber].text}}</p>
+                <div class="divider"></div>
+                <b>{{reviewsList[slideNumber].name}}</b>
+                <span>{{reviewsList[slideNumber].position}}</span>
+            </div>
+        </div>
+    </div>
+</div>

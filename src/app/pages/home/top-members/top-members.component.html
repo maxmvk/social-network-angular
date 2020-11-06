@@ -1,0 +1,61 @@
+<div class="members-wrapper" fxLayout="row" fxLayoutAlign="end start" [ngClass.lt-md]="'mobile'">
+    <div class="background">
+        <div fxLayout="row" fxLayoutAlign="start end" class="members-group">
+            <div fxLayout="column" fxLayoutAlign="start center" class="members-content" [ngClass.lt-md]="'mobile'">
+                <h2>Top Motivation <b>Members</b></h2>
+                <mat-tab-group mat-align-tabs="center" class="tabs">
+                    <mat-tab label="Newest">
+                        <div class="members" fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap.gt-sm="30px" fxLayout.lt-md="row wrap">
+                            <div class="profile" fxLayout="column" fxLayoutAlign="space-between center" *ngFor="let profile of membersList1">
+                                <img [src]="profile.imgUrl" alt="">
+                                <p>{{profile.name}}</p>
+                                <span>{{profile.activity}}</span>
+                            </div>
+                        </div>
+                        <div class="members" fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap="30px" fxHide.lt-md>
+                            <div class="profile" fxLayout="column" fxLayoutAlign="space-between center" *ngFor="let profile of membersList2">
+                                <img [src]="profile.imgUrl" alt="">
+                                <p>{{profile.name}}</p>
+                                <span>{{profile.activity}}</span>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Active">
+                        <div class="members" fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap.gt-sm="30px" fxLayout.lt-md="row wrap">
+                            <div class="profile" fxLayout="column" fxLayoutAlign="space-between center" *ngFor="let profile of membersList1">
+                                <img [src]="profile.imgUrl" alt="">
+                                <p>{{profile.name}}</p>
+                                <span>{{profile.activity}}</span>
+                            </div>
+                        </div>
+                        <div class="members" fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap="30px" fxHide.lt-md>
+                            <div class="profile" fxLayout="column" fxLayoutAlign="space-between center" *ngFor="let profile of membersList2">
+                                <img [src]="profile.imgUrl" alt="">
+                                <p>{{profile.name}}</p>
+                                <span>{{profile.activity}}</span>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Popular">
+                        <div class="members" fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap.gt-sm="30px" fxLayout.lt-md="row wrap">
+                            <div class="profile" fxLayout="column" fxLayoutAlign="space-between center" *ngFor="let profile of membersList1">
+                                <img [src]="profile.imgUrl" alt="">
+                                <p>{{profile.name}}</p>
+                                <span>{{profile.activity}}</span>
+                            </div>
+                        </div>
+                        <div class="members" fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap="30px" fxHide.lt-md>
+                            <div class="profile" fxLayout="column" fxLayoutAlign="space-between center" *ngFor="let profile of membersList2">
+                                <img [src]="profile.imgUrl" alt="">
+                                <p>{{profile.name}}</p>
+                                <span>{{profile.activity}}</span>
+                            </div>
+                        </div>
+                    </mat-tab>
+                </mat-tab-group>
+
+            </div>
+            <img class="img-bg" src="assets/images/Members.svg" alt="" fxHide.lt-lg>
+        </div>
+    </div>
+</div>

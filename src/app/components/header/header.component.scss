@@ -1,0 +1,108 @@
+@import "src/assets/scss/index";
+
+a {
+    text-decoration: none;
+    color: $regular-text-color;
+}
+
+li {
+    text-decoration: none;
+    color: $regular-text-color;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+li:hover {
+    filter: brightness(130%);
+}
+
+::ng-deep .mat-menu-panel {
+    border-radius: 8px !important;
+}
+
+::ng-deep .cdk-overlay-pane::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 26px;
+    border: 5px solid transparent;
+    border-bottom: 10px solid white;
+}
+
+::ng-deep .mat-elevation-z4 {
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.21);
+}
+
+.item {
+    @include font-primary-m-regular;
+    height: 40px;
+    line-height: 40px;
+}
+
+.navigation-items {
+    @include font-primary-m-semi-bold;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: $regular-text-color;
+}
+
+.mat-toolbar {
+    position: fixed;
+    background-color: $primary-background-color;
+    height: 96px;
+    padding: 0 50px;
+    box-shadow: 0px 4px 20px rgba(55, 29, 20, 0.04);
+    z-index: 1000;
+}
+
+.mat-toolbar.mobile {
+    padding: 0 16px;
+    height: 70px;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-right: 64px;
+}
+
+a.logo {
+    border-radius: 0;
+    padding: 0;
+}
+
+.logo.mobile {
+    width: 89px;
+    height: 45px;
+
+    img {
+        width: 89px;
+        height: 45px;
+    }
+}
+
+.menu-button {
+    @include font-primary-xl-bold;
+    @include button-primary-outlined;
+    width: 155px;
+
+    mat-icon {
+        width: 22px;
+        height: 35px;
+        font-size: 32px !important;
+        margin-left: -6px;
+    }
+
+    &:hover {
+        @include button-primary-regular;
+        @include hover-transition;
+    }
+}
+
+.sidenav-button {
+    color: $secondary-orange-color;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+

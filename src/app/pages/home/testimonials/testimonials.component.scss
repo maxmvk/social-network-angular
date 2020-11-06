@@ -1,0 +1,133 @@
+@import "src/assets/scss/index";
+
+.testimonials-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #EAF6FE;
+}
+
+.testimonials-content {
+    box-sizing: border-box;
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    padding: 110px 85px;
+
+    .title {
+        width: 100%;
+        margin-bottom: 64px;
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            color: $primary-blue-color;
+            margin: 0;
+            width: 100%;
+            font-size: $font-size-xxxl;
+            font-weight: 700;
+            line-height: 46px;
+            text-align: center;
+            letter-spacing: -1.2px;
+        }
+    }
+
+    .reviews-container {
+        width: 100%;
+
+        .review {
+            width: 350px;
+            height: 310px;
+            text-align: center;
+
+            img {
+                border-radius: 50%;
+            }
+
+            p, span {
+                @include font-primary-m-regular;
+                margin: 0;
+                color: $regular-text-color;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+            }
+
+            p {
+                margin: 32px 0;
+            }
+
+            .divider {
+                width: 65px;
+                height: 4px;
+                background-color: $primary-orange-color;
+                margin-bottom: 32px;
+            }
+
+            b {
+                @include font-primary-xl-bold;
+                color: $primary-blue-color;
+                line-height: 26px;
+                margin-bottom: 8px;
+            }
+
+            span {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+  }
+  .carousel {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 6000px;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+
+.testimonials-content.mobile {
+    height: 498px;
+    padding: 56px 15px;
+
+    .title {
+        max-width: 350px;
+        margin-bottom: 40px;
+
+        h2 {
+            width: unset;
+            font-size: $font-size-h1-mobile;
+            line-height: 36px;
+        }
+
+        button {
+            background-color: rgba(207, 221, 250, 0.5);
+        }
+    }
+
+    .reviews-container {
+        .review {
+            animation: anim 1s;
+        }
+    }
+}
+
+::ng-deep .mat-button {
+    padding: 0 !important;
+    min-width: 24px;
+    height: 24px;
+    line-height: 22px;
+    border-radius: 4px;
+    color: #0B1B45;
+}
+
+@keyframes anim{
+    from {
+        opacity: 0;
+      }
+    to {
+        opacity: 1;
+    }
+}

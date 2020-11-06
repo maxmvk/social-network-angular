@@ -1,0 +1,154 @@
+@import "src/assets/scss/index";
+
+.members-wrapper {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 0 0 83px;
+    width: 100%;
+
+    .background {
+        box-sizing: border-box;
+        background-color: $secondary-background-color;
+        border-radius: 120px 0 0 120px;
+        padding: 110px 35px 110px 82px;
+        width: 100%;
+        max-width: 1597px;
+        height: 100%;
+    }
+}
+
+.img-bg {
+    margin-bottom: 18px;
+}
+
+.members-content {
+    box-sizing: border-box;
+    margin: 0;
+    width: 730px;
+    height: 592px;
+    margin-right: 116px;
+
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        color: $primary-blue-color;
+        margin: 0;
+        font-size: $font-size-xxxl;
+        font-weight: 200;
+        line-height: 46px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 32px;
+        letter-spacing: -1.2px;
+
+        b {
+            font-weight: 700;
+        }
+    }
+
+    .tabs {
+        width: 730px;
+    }
+
+    .members {
+        width: 730px;
+        margin-top: 32px;
+
+        &:last-child {
+            margin-top: 34px;
+        }
+    }
+
+    .profile {
+        width: 160px;
+        height: 202px;
+
+        img {
+            border-radius: 8px;
+        }
+
+        p {
+            @include font-primary-l-semi-bold;
+            color: $primary-blue-color;
+            margin: 6px 0 2px;
+        }
+
+        span {
+            @include font-primary-s-regular;
+            color: $regular-text-color;
+            opacity: 0.7;
+        }
+    }
+}
+
+::ng-deep .mat-tab-header {
+    border-bottom: none !important;
+}
+
+::ng-deep .mat-tab-label-content:focus:not(.mat-tab-disabled) {
+    font-weight: 800 !important;
+ }
+
+::ng-deep .mat-ink-bar {
+    background-color: $primary-orange-color !important;
+    height: 1px !important;
+}
+
+::ng-deep .mat-tab-label {
+    @include font-primary-xl-regular;
+    min-width: 100px !important;
+    width: 100px !important;
+    color: $regular-text-color;
+    box-shadow: inset 0px -1px 0px #DEDEDE;
+}
+
+::ng-deep .mat-tab-label-active{
+    color: $primary-orange-color !important;
+    font-weight: 800 !important;
+    opacity: 1 !important;
+}
+
+.members-wrapper.mobile {
+    padding: 0;
+
+    .background {
+        border-radius: 0;
+        padding: 56px 15px;
+    }
+}
+
+.members-content.mobile {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .tabs {
+        width: 380px;
+
+        @media (max-width: 375px) {
+            width: 320px;
+        }
+    }
+
+    .members {
+        width: 100%;
+        margin: 0;
+    }
+
+    .profile {
+        margin: 24px 14px 0;
+
+        @media (max-width: 375px) {
+            width: 130px;
+            height: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

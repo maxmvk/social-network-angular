@@ -1,0 +1,33 @@
+<div fxFlex fxLayout="column" fxLayoutAlign="center center" class="find-pair-wrapper" [ngClass.lt-md]="'mobile'">
+    <h2>Find <b>Your Motivation Pair</b></h2>
+    <p>
+        Motivation Pairs is the new generation way of connecting people. 
+        More than 5 Million individuals are actively looking for someone like you to partake in their success journey.  
+        Sign up now and start connecting with amazing people!
+    </p>
+    <button mat-button color="warn" class="menu-button">
+        Sign Up Now
+    </button>
+    <div #numbersMeasure fxLayout="row" fxLayoutAlign="space-between center" class="numbers-container">
+        <div fxLayout="row" fxLayoutAlign="space-between stretch" class="numbers-group">
+            <div fxLayout="column" fxLayoutAlign="space-between center">
+                <h6>{{count.total}}</h6>
+                <p>Members in total</p>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="space-between center">
+                <h6>{{count.online}}</h6>
+                <p>Members online</p>
+            </div>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between stretch" class="numbers-group">
+            <div fxLayout="column" fxLayoutAlign="space-between center">
+                <h6>{{count.woman}}</h6>
+                <p>woman online</p>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="space-between center">
+                <h6>{{count.man}}</h6>
+                <p>men online</p>
+            </div>
+        </div>
+    </div>
+</div>

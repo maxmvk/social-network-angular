@@ -1,0 +1,200 @@
+$margin-xs: 5px;
+$margin-s: 8px;
+$margin-m: 10px;
+$margin-l: 15px;
+$margin-xl: 20px;
+$margin-xxl: 30px;
+
+
+// Extra Small
+
+.margin-top-xs {
+    margin-top: $margin-s;
+}
+
+.margin-bottom-xs {
+    margin-bottom: $margin-s;
+}
+
+.margin-left-xs {
+    margin-left: $margin-s;
+}
+
+.margin-right-xs {
+    margin-right: $margin-s;
+}
+
+.margin-vertical-xs {
+    @extend .margin-top-xs;
+    @extend .margin-bottom-xs;
+}
+
+.margin-horizontal-xs {
+    @extend .margin-left-xs;
+    @extend .margin-right-xs;
+}
+
+.margin-xs {
+    @extend .margin-vertical-xs;
+    @extend .margin-horizontal-xs;
+}
+
+// Small
+
+.margin-top-s {
+    margin-top: $margin-s;
+}
+
+.margin-bottom-s {
+    margin-bottom: $margin-s;
+}
+
+.margin-left-s {
+    margin-left: $margin-s;
+}
+
+.margin-right-s {
+    margin-right: $margin-s;
+}
+
+.margin-vertical-s {
+    @extend .margin-top-s;
+    @extend .margin-bottom-s;
+}
+
+.margin-horizontal-s {
+    @extend .margin-left-s;
+    @extend .margin-right-s;
+}
+
+.margin-s {
+    @extend .margin-vertical-s;
+    @extend .margin-horizontal-s;
+}
+
+// Medium
+
+.margin-top-m {
+    margin-top: $margin-m;
+}
+
+.margin-bottom-m {
+    margin-bottom: $margin-m;
+}
+
+.margin-left-m {
+    margin-left: $margin-m;
+}
+
+.margin-right-m {
+    margin-right: $margin-m;
+}
+
+.margin-vertical-m {
+    @extend .margin-top-m;
+    @extend .margin-bottom-m;
+}
+
+.margin-horizontal-m {
+    @extend .margin-left-m;
+    @extend .margin-right-m;
+}
+
+.margin-m {
+    @extend .margin-vertical-m;
+    @extend .margin-horizontal-m;
+}
+
+// Large
+
+.margin-top-l {
+    margin-top: $margin-l;
+}
+
+.margin-bottom-l {
+    margin-bottom: $margin-l;
+}
+
+.margin-left-l {
+    margin-left: $margin-l;
+}
+
+.margin-right-l {
+    margin-right: $margin-l;
+}
+
+.margin-vertical-l {
+    @extend .margin-top-l;
+    @extend .margin-bottom-l;
+}
+
+.margin-horizontal-l {
+    @extend .margin-left-l;
+    @extend .margin-right-l;
+}
+
+.margin-l {
+    @extend .margin-vertical-l;
+    @extend .margin-horizontal-l;
+}
+
+// Extra Large
+
+.margin-top-xl {
+    margin-top: $margin-xl;
+}
+
+.margin-bottom-xl {
+    margin-bottom: $margin-xl;
+}
+
+.margin-left-xl {
+    margin-left: $margin-xl;
+}
+
+.margin-right-xl {
+    margin-right: $margin-xl;
+}
+
+.margin-vertical-xl {
+    @extend .margin-top-xl;
+    @extend .margin-bottom-xl;
+}
+
+.margin-horizontal-xl {
+    @extend .margin-left-xl;
+    @extend .margin-right-xl;
+}
+
+.margin-xl {
+    @extend .margin-vertical-xl;
+    @extend .margin-horizontal-xl;
+}
+
+// XX Large
+
+.margin-top-xxl {
+    margin-top: $margin-xxl;
+}
+
+.margin-bottom-xxl {
+    margin-bottom: $margin-xxl;
+}
+
+.margin-left-xxl {
+    margin-left: $margin-xxl;
+}
+
+.margin-right-xxl {
+    margin-right: $margin-xxl;
+}
+
+.margin-horizontal-xxl {
+    @extend .margin-left-xxl;
+    @extend .margin-right-xxl;
+}
+
+.margin-vertical-xxl {
+    @extend .margin-top-xxl;
+    @extend .margin-bottom-xxl;
+}

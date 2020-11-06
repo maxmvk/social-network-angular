@@ -1,0 +1,35 @@
+<mat-nav-list>
+    <span class="nav-list-title"><img src="assets/images/logo.svg" alt=""></span>
+    <mat-accordion>
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                Connect
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <a *ngFor="let menu of connectMenus" class="item" [routerLink]="menu.link" mat-menu-item (click)="onSidenavClose()">{{menu.name}}</a>
+        </mat-expansion-panel>
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Motivation Pair
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <a *ngFor="let menu of pairsMenus" class="item" [routerLink]="menu.link" mat-menu-item (click)="onSidenavClose()">{{menu.name}}</a>
+        </mat-expansion-panel>
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Shared Activity
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <a *ngFor="let menu of activityMenus" class="item" [routerLink]="menu.link" mat-menu-item (click)="onSidenavClose()">{{menu.name}}</a>
+        </mat-expansion-panel>
+    </mat-accordion>
+    <a mat-list-item routerLink="/" class="nav-caption" (click)="onSidenavClose()">
+        How It Works
+    </a>
+</mat-nav-list>
+<button mat-button color="warn" class="menu-button">
+    Sign up
+</button>

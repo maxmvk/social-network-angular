@@ -1,0 +1,67 @@
+@import "src/assets/scss/index";
+
+.wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 70px 0 53px;
+  margin: 0;
+}
+
+.preview-card {
+  padding: 100px 16px 0;
+  text-align: center;
+  width: 100%;
+  background:$light-yellow-color;
+  margin-bottom: 56px;
+}
+
+.header-text {
+  font-size: 36px;
+  font-family: Poppins;
+  color: $primary-blue-color;
+  font-weight: bold;
+}
+
+.label-text {
+  font-size: 16px;
+  font-family: Poppins;
+  color: $primary-blue-color;
+}
+
+.img-block {
+  width: 50%;
+  height: auto;
+}
+
+.expansion-container {
+  width: 70%;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 24px;
+}
+
+.wrapper.mobile {
+  margin: 0;
+}
+
+@media (max-width: 960px) {
+  .img-block {
+    width: 100%;
+    height: auto;
+  }
+
+  .preview-card {
+    padding: 30px 16px 0;
+    margin-bottom: 24px;
+  }
+
+  .header-text {
+    font-size: 24px;
+  }
+
+  .expansion-container {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}

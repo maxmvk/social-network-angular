@@ -1,0 +1,58 @@
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 800;
+
+$font-size-xs: 10px;
+$font-size-s: 14px;
+$font-size-m: 16px;
+$font-size-l: 18px;
+$font-size-xl: 20px;
+$font-size-xxl: 24px;
+$font-size-xxxl: 36px;
+$font-size-h1: 48px;
+$font-size-h1-mobile: 28px;
+
+@mixin font-primary-xs-thin {
+    font-size: $font-size-xs;
+    font-weight: 200;
+}
+
+@mixin font-primary-s-regular {
+    font-size: $font-size-s;
+    font-weight: $font-weight-regular;
+}
+
+@mixin font-primary-m-regular {
+    font-size: $font-size-m;
+    font-weight: $font-weight-regular;
+}
+
+@mixin font-primary-m-semi-bold {
+    font-size: $font-size-m;
+    font-weight: $font-weight-semi-bold;
+}
+
+@mixin font-primary-m-bold {
+    font-size: $font-size-m;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-primary-l-semi-bold {
+    font-size: $font-size-l;
+    font-weight: $font-weight-semi-bold;
+}
+
+@mixin font-primary-xl-regular {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-regular;
+}
+
+@mixin font-primary-xl-bold {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-primary-xxl-semi-bold {
+    font-size: $font-size-xxl !important;
+    font-weight: $font-weight-semi-bold !important;
+}

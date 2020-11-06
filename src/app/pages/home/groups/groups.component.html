@@ -1,0 +1,15 @@
+<div class="groups-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <div class="groups-content" [ngClass.lt-md]="'mobile'">
+        <h2>Recently Active <b>Group</b></h2>
+        <div class="groups-container" fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap="30px" fxLayoutGap.lt-lg="24px" [ngClass.lt-lg]="'mobile'">
+            <div class="group" fxLayout="column" fxLayoutAlign="space-between center" *ngFor="let group of groupsList" [class]="group.color">
+                <img [src]="group.iconUrl" alt="">
+                <h6>{{group.title}}</h6>
+                <p>{{group.text}}</p>
+                <button mat-button color="warn">
+                    View group
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

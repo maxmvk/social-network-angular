@@ -1,0 +1,81 @@
+@import "src/assets/scss/index";
+
+mat-nav-list {
+    padding: 0;
+    margin: 0;
+
+    a {
+        font-size: 1.2rem;
+    }
+}
+
+.nav-caption {
+    display: inline-block;
+}
+
+.nav-list-title {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 18px;
+
+    img {
+        padding: 10px 16px 15px;
+        width: 89px;
+        height: 45px;
+    }
+}
+
+.nav-list-title.mobile {
+    padding: 1rem;
+}
+
+mat-panel-title {
+    @include font-primary-xxl-semi-bold;
+    color: $blue-text-color;
+}
+
+::ng-deep .mat-expansion-panel {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+::ng-deep .mat-expansion-panel-header {
+    background-color: white !important;
+    height: 78px;
+}
+
+::ng-deep .mat-nav-list .mat-list-item {
+    @include font-primary-xxl-semi-bold;
+    color: $blue-text-color;
+    height: 78px !important;
+}
+
+::ng-deep .mat-list-item-content {
+    padding: 0 24px !important;
+}
+
+::ng-deep .mat-drawer-inner-container {
+    height: 85% !important;
+}
+
+.menu-button {
+    @include font-primary-xl-bold;
+    @include button-primary-regular;
+    width: 155px;
+    position: fixed;
+    bottom: 35px;
+    left: 26px;
+    z-index: 100;
+
+    mat-icon {
+        width: 22px;
+        height: 35px;
+        font-size: 32px !important;
+        margin-left: -6px;
+    }
+
+    &:hover {
+        @include button-primary-regular;
+        @include hover-transition;
+    }
+}

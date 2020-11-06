@@ -1,0 +1,99 @@
+@import "src/assets/scss/index";
+
+.groups-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.groups-content {
+    box-sizing: border-box;
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    padding: 110px 85px;
+
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        color: $primary-blue-color;
+        margin: 0;
+        font-size: $font-size-xxxl;
+        font-weight: 200;
+        line-height: 46px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 64px;
+        letter-spacing: -1.2px;
+
+        b {
+            font-weight: 700;
+        }
+    }
+
+    .groups-container {
+        width: 100%;
+
+        .group {
+            box-sizing: border-box;
+            border-radius: 8px;
+            min-width: 255px;
+            height: 330px;
+            padding: 40px 16px;
+            text-align: center;
+
+            h6 {
+                @include font-primary-xl-bold;
+                margin: 32px 0 8px;
+                color: white;
+            }
+
+            p {
+                @include font-primary-m-regular;
+                font-weight: 300 !important;
+                margin: 0;
+                color: white;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+                margin-bottom: 32px;
+            }
+
+            button {
+                @include font-primary-m-bold;
+                @include button-groups-outlined;
+                width: 100%;
+                font-size: 16px !important;
+                font-weight: 700 !important;
+            }
+        }
+
+        .red {
+            background-color: #FF9C94;
+        }
+
+        .yellow {
+            background-color: #FFE1AD;
+        }
+
+        .green {
+            background-color: $primary-green-color;
+        }
+
+        .blue {
+            background-color: #91ABE5;
+        }
+    }
+}
+
+.groups-content.mobile {
+    padding: 56px 15px 0px;
+
+    h2 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 32px;
+    }
+}
+
+.groups-container.mobile {
+    overflow-x: scroll;
+    height: 386px;
+}

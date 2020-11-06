@@ -1,0 +1,33 @@
+<mat-toolbar [ngClass.lt-md]="'mobile'">
+    <div fxLayoutAlign="start" class="logo" [ngClass.lt-md]="'mobile'">
+        <a routerLink="/">
+           <img src="assets/images/logo.svg" alt="">
+        </a>
+    </div>
+    <div fxFlex fxLayoutAlign="start" fxHide.lt-md>
+        <ul fxLayout class="navigation-items" [ngClass.lt-md]="'mobile'">
+            <li [matMenuTriggerFor]="connectMenu">Connect</li>
+            <mat-menu #connectMenu="matMenu" yPosition="below">
+                <a *ngFor="let menu of connectMenus" class="item" [routerLink]="menu.link" mat-menu-item>{{menu.name}}</a>
+            </mat-menu>
+            <li [matMenuTriggerFor]="pairMenu">Motivation Pair</li>
+            <mat-menu #pairMenu="matMenu" yPosition="below">
+                <a *ngFor="let menu of pairsMenus" class="item" [routerLink]="menu.link" mat-menu-item>{{menu.name}}</a>
+            </mat-menu>
+            <li [matMenuTriggerFor]="activityMenu">Shared Activity</li>
+            <mat-menu #activityMenu="matMenu" yPosition="below">
+                <a *ngFor="let menu of activityMenus" class="item" [routerLink]="menu.link" mat-menu-item>{{menu.name}}</a>
+            </mat-menu>
+            <li><a routerLink="how-it-works">How It Works</a></li>
+        </ul>
+    </div>
+    <div fxFlex fxLayoutAlign="end" fxHide.lt-md>
+        <button mat-button color="warn" class="menu-button">
+            Sign up
+            <mat-icon>expand_more</mat-icon>
+        </button>
+    </div>
+    <div fxHide.gt-sm class="sidenav-button">
+        <mat-icon (click)="onToggleSidenav()">{{isSidenavOpen? 'close' : 'menu'}}</mat-icon>
+    </div>
+</mat-toolbar>

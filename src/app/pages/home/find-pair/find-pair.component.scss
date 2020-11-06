@@ -1,0 +1,106 @@
+@import "src/assets/scss/index";
+
+.find-pair-wrapper {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 165px;
+    width: 100%;
+    height: 592px;
+
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        color: $primary-blue-color;
+        margin: 0;
+        font-size: $font-size-xxxl;
+        font-weight: 200;
+        line-height: 46px;
+        text-align: center;
+        margin-bottom: 24px;
+        letter-spacing: -1.2px;
+
+        b {
+            font-weight: 700;
+        }
+    }
+
+    p {
+        @include font-primary-m-regular;
+        max-width: 730px;
+        color: $primary-blue-color;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .menu-button {
+        @include font-primary-xl-bold;
+        @include button-primary-regular;
+        width: 200px;
+        z-index: 100;
+        margin: 24px 0 48px;
+    }
+
+    .numbers-container {
+        width: 696px;
+        text-transform: uppercase;
+    }
+
+    .numbers-group {
+        height: 102px;
+        width: 306px;
+
+        &:first-child {
+            width: 342px;
+        }
+    
+        h6 {
+            font-family: 'Poppins', sans-serif;
+            color: $primary-green-color;
+            margin: 0;
+            font-size: 64px;
+            line-height: 64px;
+            font-weight: $font-weight-regular;
+            letter-spacing: 0.6px;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            @include font-primary-m-semi-bold;
+            line-height: 22px;
+            margin: 0;
+            letter-spacing: 0.6px;
+        }
+    }
+}
+
+.find-pair-wrapper.mobile {
+    min-height: 678px;
+    height: 100%;
+    padding: 56px 15px;
+
+    h2 {
+        font-size: $font-size-h1-mobile;
+        line-height: 36px;
+    }
+
+    .menu-button {
+        margin: 32px 0 56px 0;
+    }
+
+    .numbers-container {
+        flex-direction: column !important;
+        max-width: 348px;
+        min-width: 270px;
+        width: 100%;
+        height: 244px;
+    }
+
+    .numbers-group {
+        max-width: 336px;
+        width: 100%;
+
+        div {
+            width: 156px;
+        }
+    }
+}

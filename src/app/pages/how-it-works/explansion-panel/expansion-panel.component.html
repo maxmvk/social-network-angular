@@ -1,0 +1,18 @@
+<div class="explain-block" (click)="showHiddenContent(expansion.id)">
+  <label class="flex-container">
+    <img class="margin-right-xl image-size" [src]="expansion.iconUrl" alt="">
+    <span [id]="'name' + expansion.id">{{expansion.name}}</span>
+    <img [id]="'arrow' + expansion.id"
+         class="arrow"
+         src="assets/icons/arrow-bottom.svg"
+         alt="">
+  </label>
+  <div [id]="'content' + expansion.id" class="hidden-content">
+    <div class="vertical-content-divider"></div>
+    <div *ngFor="let description of expansion.descriptions">
+      <b>{{description.key}}</b>
+      <b *ngIf="description.key">: </b>
+      <span>{{description.text}}</span>
+    </div>
+  </div>
+</div>

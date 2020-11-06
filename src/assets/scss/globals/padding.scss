@@ -1,0 +1,170 @@
+$padding-s: 5px;
+$padding-m: 10px;
+$padding-l: 15px;
+$padding-xl: 20px;
+$padding-xxl: 30px;
+
+// Small
+
+.padding-top-s {
+    padding-top: $padding-s;
+}
+
+.padding-bottom-s {
+    padding-bottom: $padding-s;
+}
+
+.padding-left-s {
+    padding-left: $padding-s;
+}
+
+.padding-right-s {
+    padding-right: $padding-s;
+}
+
+.padding-vertical-s {
+    @extend .padding-top-s;
+    @extend .padding-bottom-s;
+}
+
+.padding-horizontal-s {
+    @extend .padding-left-s;
+    @extend .padding-right-s;
+}
+
+.padding-s {
+    @extend .padding-vertical-s;
+    @extend .padding-horizontal-s;
+}
+
+// Medium
+
+.padding-top-m {
+    padding-top: $padding-m;
+}
+
+.padding-bottom-m {
+    padding-bottom: $padding-m;
+}
+
+.padding-left-m {
+    padding-left: $padding-m;
+}
+
+.padding-right-m {
+    padding-right: $padding-m;
+}
+
+.padding-vertical-m {
+    @extend .padding-top-m;
+    @extend .padding-bottom-m;
+}
+
+.padding-horizontal-m {
+    @extend .padding-left-m;
+    @extend .padding-right-m;
+}
+
+.padding-m {
+    @extend .padding-vertical-m;
+    @extend .padding-horizontal-m;
+}
+
+// Large
+
+.padding-top-l {
+    padding-top: $padding-l;
+}
+
+.padding-bottom-l {
+    padding-bottom: $padding-l;
+}
+
+.padding-left-l {
+    padding-left: $padding-l;
+}
+
+.padding-right-l {
+    padding-right: $padding-l;
+}
+
+.padding-vertical-l {
+    @extend .padding-top-l;
+    @extend .padding-bottom-l;
+}
+
+.padding-horizontal-l {
+    @extend .padding-left-l;
+    @extend .padding-right-l;
+}
+
+.padding-l {
+    @extend .padding-vertical-l;
+    @extend .padding-horizontal-l;
+}
+
+// Extra Large
+
+.padding-top-xl {
+    padding-top: $padding-xl;
+}
+
+.padding-bottom-xl {
+    padding-bottom: $padding-xl;
+}
+
+.padding-left-xl {
+    padding-left: $padding-xl;
+}
+
+.padding-right-xl {
+    padding-right: $padding-xl;
+}
+
+.padding-vertical-xl {
+    @extend .padding-top-xl;
+    @extend .padding-bottom-xl;
+}
+
+.padding-horizontal-xl {
+    @extend .padding-left-xl;
+    @extend .padding-right-xl;
+}
+
+.padding-xl {
+    @extend .padding-vertical-xl;
+    @extend .padding-horizontal-xl;
+}
+
+// XX Large
+
+.padding-top-xxl {
+    padding-top: $padding-xxl;
+}
+
+.padding-bottom-xxl {
+    padding-bottom: $padding-xxl;
+}
+
+.padding-left-xxl {
+    padding-left: $padding-xxl;
+}
+
+.padding-right-xxl {
+    padding-right: $padding-xxl;
+}
+
+.padding-vertical-xxl {
+    @extend .padding-top-xxl;
+    @extend .padding-bottom-xxl;
+}
+
+.padding-horizontal-xxl {
+    @extend .padding-left-xxl;
+    @extend .padding-right-xxl;
+}
+
+.padding-xxl {
+    @extend .padding-vertical-xxl;
+    @extend .padding-horizontal-xxl;
+}

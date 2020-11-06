@@ -1,0 +1,18 @@
+<mat-sidenav-container hasBackdrop="false" fxFlexFill>
+    <mat-sidenav #sidenav role="navigation" mode="over" fixedInViewport="true" class="sidenav"
+    [ngClass.lt-md]="'mobile'">
+        <!--   SideNavBar for mobile     -->
+        <app-sidenav (sidenavClose)="sidenav.close()"></app-sidenav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div fxFlexFill fxLayout="column">
+            <!--   TopBar for desktop     -->
+            <app-header (sidenavToggle)="sidenav.toggle()" [isSidenavOpen]="sidenav.opened"></app-header>
+            <!--     Page content       -->
+            <main>
+                <router-outlet></router-outlet>
+            </main>
+            <app-footer></app-footer>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
